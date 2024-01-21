@@ -1,0 +1,12 @@
+
+name = "GifPlayer"
+uuid = "1b08a953-4be3-4667-9a23-f63b225d31b4"
+authors = ["Gabriel Carvajal <gcarvajal2001@gmail.com>"]
+version = "0.0.1"
+
+[deps]
+Dash = "1b08a953-4be3-4667-9a23-3db579824955"
+
+[compat]
+julia = "1.2"
+Dash = "0.1.3, 1.0"
