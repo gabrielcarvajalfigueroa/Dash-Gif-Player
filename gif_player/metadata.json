@@ -42,6 +42,20 @@
         },
         "required": false,
         "description": "Optional alt text attribute passed to\nimg element."
+      },
+      "height": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Optional number for defining the height\nof the component."
+      },
+      "width": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Optional number for defining the width\nof the component."
       }
     }
   }

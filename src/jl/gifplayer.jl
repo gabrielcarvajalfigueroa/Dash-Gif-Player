@@ -19,10 +19,14 @@ img element.
 - `autoplay` (Bool; optional): A boolean which can be set true if you want to immediately
 bomard your user with a moving GIF.
 - `gif` (String; required): A string address to an animated GIF image.
+- `height` (Real; optional): Optional number for defining the height
+of the component.
 - `still` (String; required): A string address to a still preview of the GIF (e.g. JPG, PNG, etc.)
+- `width` (Real; optional): Optional number for defining the width
+of the component.
 """
 function gifplayer(; kwargs...)
-        available_props = Symbol[:id, :alt, :autoplay, :gif, :still]
+        available_props = Symbol[:id, :alt, :autoplay, :gif, :height, :still, :width]
         wild_props = Symbol[]
         return Component("gifplayer", "GifPlayer", "gif_player", available_props, wild_props; kwargs...)
 end

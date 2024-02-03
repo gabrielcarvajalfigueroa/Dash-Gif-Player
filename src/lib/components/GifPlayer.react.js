@@ -12,7 +12,7 @@ import RSGifPlayer from 'react-gif-player';
  */
 export default class GifPlayer extends Component {
     render() {
-        const {id, alt, gif, still, autoplay} = this.props;
+        const {id, alt, gif, still, autoplay, height, width} = this.props;
         return (
             <React.Fragment>
                 <RSGifPlayer
@@ -21,6 +21,7 @@ export default class GifPlayer extends Component {
                     gif={gif}
                     still={still}
                     autoplay={autoplay}
+                    style={{width: width, height: height}}
                 />
                       
             </React.Fragment>
@@ -60,4 +61,16 @@ GifPlayer.propTypes = {
      * img element.
      */
     alt: PropTypes.string,
+
+    /**
+     * Optional number for defining the height
+     * of the component.     
+     */
+    height: PropTypes.number,
+
+    /**
+     * Optional number for defining the width
+     * of the component.     
+     */
+    width: PropTypes.number,
 };

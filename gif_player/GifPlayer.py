@@ -27,18 +27,24 @@ Keyword arguments:
 - gif (string; required):
     A string address to an animated GIF image.
 
+- height (number; optional):
+    Optional number for defining the height of the component.
+
 - still (string; required):
     A string address to a still preview of the GIF (e.g. JPG, PNG,
-    etc.)."""
+    etc.).
+
+- width (number; optional):
+    Optional number for defining the width of the component."""
     _children_props = []
     _base_nodes = ['children']
     _namespace = 'gif_player'
     _type = 'GifPlayer'
     @_explicitize_args
-    def __init__(self, id=Component.REQUIRED, gif=Component.REQUIRED, still=Component.REQUIRED, autoplay=Component.UNDEFINED, alt=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['id', 'alt', 'autoplay', 'gif', 'still']
+    def __init__(self, id=Component.REQUIRED, gif=Component.REQUIRED, still=Component.REQUIRED, autoplay=Component.UNDEFINED, alt=Component.UNDEFINED, height=Component.UNDEFINED, width=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['id', 'alt', 'autoplay', 'gif', 'height', 'still', 'width']
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['id', 'alt', 'autoplay', 'gif', 'still']
+        self.available_properties = ['id', 'alt', 'autoplay', 'gif', 'height', 'still', 'width']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()

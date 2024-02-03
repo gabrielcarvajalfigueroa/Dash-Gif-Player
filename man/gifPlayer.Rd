@@ -10,7 +10,8 @@ GifPlayer is a component the creates a playable gif in a dash application. This 
 }
 
 \usage{
-gifPlayer(id=NULL, alt=NULL, autoplay=NULL, gif=NULL, still=NULL)
+gifPlayer(id=NULL, alt=NULL, autoplay=NULL, gif=NULL, height=NULL,
+still=NULL, width=NULL)
 }
 
 \arguments{
@@ -24,7 +25,13 @@ bomard your user with a moving GIF.}
 
 \item{gif}{Character. A string address to an animated GIF image.}
 
+\item{height}{Numeric. Optional number for defining the height
+of the component.}
+
 \item{still}{Character. A string address to a still preview of the GIF (e.g. JPG, PNG, etc.)}
+
+\item{width}{Numeric. Optional number for defining the width
+of the component.}
 }
 
 \value{named list of JSON elements corresponding to React.js properties and their values}
