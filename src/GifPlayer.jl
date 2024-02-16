@@ -3,7 +3,7 @@ module GifPlayer
 using Dash
 
 const resources_path = realpath(joinpath( @__DIR__, "..", "deps"))
-const version = "0.0.1"
+const version = "0.0.5"
 
 include("jl/gifplayer.jl")
 
@@ -27,6 +27,13 @@ DashBase.Resource(
     dynamic = true,
     async = nothing,
     type = :js
+),
+DashBase.Resource(
+    relative_package_path = "gif_player.min.css",
+    external_url = nothing,
+    dynamic = nothing,
+    async = nothing,
+    type = :css
 )
             ]
         )

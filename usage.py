@@ -5,12 +5,10 @@ app = Dash(__name__)
 
 app.layout = html.Div([
     gif_player.GifPlayer(
-        id='input',
-        gif='https://raw.githubusercontent.com/mbkupfer/dash-gif-component/master/demo/assets/giphy.gif',
-        still='https://raw.githubusercontent.com/mbkupfer/dash-gif-component/master/demo/assets/giphy.png',
-        height=300,
-        width=500
-    )
+                        id="adsa",
+                        gif='https://clima.lco.cl/casca/satanim.gif?5836492',
+                        still='https://fakeimg.pl/680/'
+                )
 
 ])
 

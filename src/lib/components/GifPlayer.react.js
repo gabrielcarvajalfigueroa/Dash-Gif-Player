@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import RSGifPlayer from 'react-gif-player';
+import './css/gifplayer.min.css'
 
 /**
  * GifPlayer is a component the creates a playable

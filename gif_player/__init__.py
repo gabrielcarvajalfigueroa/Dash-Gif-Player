@@ -81,6 +81,14 @@ _js_dist.extend(
 
 _css_dist = []
 
+_css_dist.extend([
+    {
+        'relative_package_path': 'gif_player.min.css',
+    
+        'namespace': package_name
+    }
+])
+
 
 for _component in __all__:
     setattr(locals()[_component], '_js_dist', _js_dist)
