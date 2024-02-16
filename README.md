@@ -2,7 +2,7 @@
 
 Gif Player is a dash component that follows the same approach as here: [dash-gif-player](https://pypi.org/project/dash-gif-component/). The only difference is that I made a few changes so the component now can receive: id, height and width. Also it has a different `css file` that only has `cursor:pointer;` to add the hover change.
 
-```
+``` py
 import gif_player as gif
 
 gif.GifPlayer(
@@ -17,13 +17,13 @@ gif.GifPlayer(
 I added those things because they were neccesary to the project that I was working on, I take no credit for this package I would've liked to add this features to the actual package but the owner didn't reply to me.
 
 To use this package do:
-```
+``` bash
 (venv) $ pip install gif-player
 ```
 
 And do not forget to reference it in your `settings.py` file if you are using it in django, in that case it should look like this:
 
-```
+``` py
 . . .
 
 #Add PLOTLY_COMPONENTS
